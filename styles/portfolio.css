@@ -1,0 +1,13 @@
+h1 {
+  color: red;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+}
+p {
+  color: blue;
+  font-family: "Antic Didone", serif;
+  font-weight: bold;
+}
+.fa-linkedin {
+  color: orange;
+}
