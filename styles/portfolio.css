@@ -1,13 +1,43 @@
+body {
+  background: linear-gradient
+      (180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%),
+    url(/images/pexels-ron-lach-8455397.jpg);
+}
+
 h1 {
-  color: red;
+  color: white;
   font-family: "Merriweather", serif;
   font-weight: bold;
 }
 p {
-  color: blue;
+  color: white;
   font-family: "Antic Didone", serif;
   font-weight: bold;
 }
 .fa-linkedin {
   color: orange;
+}
+
+.header-image {
+  height: 485px;
+  left: 0px;
+  top: 135px;
+  border-radius: 0px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-navbar {
+  width: 100%;
 }
