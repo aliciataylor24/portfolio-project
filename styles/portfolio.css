@@ -6,30 +6,32 @@ body {
 h1 {
   color: white;
   font-family: "Merriweather", serif;
-  font-weight: bold;
+  font-weight: bolder;
+  font-size: 48px;
+}
+h2 {
+  font-family: "Antic Didone", serif;
+  font-size: 18px;
+  text-align: center;
 }
 p {
   color: white;
   font-family: "Antic Didone", serif;
-  font-weight: bold;
-}
-.icons {
-  text-align: center;
-  color: #272142;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 30px;
-  margin-top: 50px;
+  font-weight: bolder;
+  font-size: 18px;
 }
 
 .header-image {
   height: 485px;
   top: 135px;
+  width: 100%;
 }
 
 .container {
+  width: 100%;
+}
+
+.container-hero {
   position: relative;
   text-align: center;
   color: white;
@@ -37,6 +39,7 @@ p {
 
 .hero {
   position: absolute;
+  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -48,4 +51,53 @@ p {
 
 .bg-light {
   background: #f9f7fe;
+}
+
+.soup-image,
+.salmon-image,
+.carrots-image,
+.tacos-image,
+.cookies-image,
+.pancakes-image {
+  height: 350px;
+  width: 405px;
+  margin: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.icons {
+  text-align: center;
+  color: #272142;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .header-image {
+    display: flex;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  p,
+  h2 {
+    font-size: 12px;
+  }
+  .soup-image,
+  .salmon-image,
+  .carrots-image,
+  .tacos-image,
+  .cookies-image,
+  .pancakes-image {
+    height: 175px;
+    width: 200px;
+    margin: auto;
+    display: block;
+    border-radius: 4px;
+  }
 }
