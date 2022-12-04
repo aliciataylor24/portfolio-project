@@ -14,7 +14,8 @@ h2 {
   font-size: 18px;
   text-align: center;
 }
-p {
+p,
+.hero p {
   color: white;
   font-family: "Antic Didone", serif;
   font-weight: bolder;
@@ -74,9 +75,46 @@ p {
   align-items: flex-start;
   gap: 30px;
   margin-top: 50px;
+  font-family: "Antic Didone", serif;
+  font-weight: bolder;
+  font-size: 18px;
 }
 .icon-green {
   color: #272142;
+}
+.alicia-image {
+  height: 400px;
+  margin: auto;
+  display: block;
+  border-radius: 8px;
+  position: relative;
+}
+.about-info-section {
+  margin: auto;
+  display: block;
+  position: relative;
+  margin-top: 150px;
+}
+.about-info h1,
+p {
+  color: black;
+  margin-right: 100px;
+  text-align: center;
+}
+.recipe-about {
+  text-align: center;
+  color: black;
+  font-weight: 400;
+  text-decoration: underline 2px black;
+}
+.soup-image-about,
+.tacos-image-about,
+.cookies-image-about {
+  height: 295px;
+  width: 305px;
+  margin: auto;
+  display: block;
+  border-radius: 8px;
 }
 @media (max-width: 768px) {
   .header-image {
@@ -86,7 +124,8 @@ p {
     font-size: 24px;
   }
   p,
-  h2 {
+  h2,
+  icons {
     font-size: 12px;
   }
   .soup-image,
@@ -100,5 +139,27 @@ p {
     margin: auto;
     display: block;
     border-radius: 4px;
+  }
+  .soup-image-about,
+  .tacos-image-about,
+  .cookies-image-about {
+    height: 175px;
+    width: 200px;
+    margin: auto;
+    display: block;
+    border-radius: 4px;
+  }
+  .about-info-section {
+    margin-top: 75px;
+  }
+  .alicia-image {
+    height: 200px;
+    margin: auto;
+    display: block;
+    border-radius: 4px;
+    position: relative;
+  }
+  .recipe-about {
+    font-size: 18px;
   }
 }
