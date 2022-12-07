@@ -1,38 +1,43 @@
-body {
-  background: linear-gradient
-    (180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%);
+:root {
+  --primary-font: "Merriweather", serif;
+  --secondary-font: "Zilla Slab", serif;
 }
 
 h1 {
   color: white;
-  font-family: "Merriweather", serif;
+  font-family: var(--primary-font);
   font-weight: bolder;
   font-size: 48px;
 }
 h2 {
-  font-family: "Zilla Slab", serif;
+  font-family: var(--secondary-font);
   font-size: 18px;
   text-align: center;
 }
 h3 {
-  font-family: "Zilla Slab", serif;
+  font-family: var(--secondary-font);
   font-size: 24px;
   text-align: center;
   font-weight: 400px;
 }
 h4 {
-  font-family: "Zilla Slab", serif;
+  font-family: var(--secondary-font);
   font-size: 18px;
   font-weight: 600px;
 }
-p,
 .hero p {
   color: white;
-  font-family: "Zilla Slab", serif;
+  font-family: var(--secondary-font);
   font-weight: 300px;
   font-size: 18px;
 }
-
+.hero {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .header-image {
   height: 485px;
   top: 135px;
@@ -47,14 +52,6 @@ p,
   position: relative;
   text-align: center;
   color: white;
-}
-
-.hero {
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .container-navbar {
@@ -105,7 +102,7 @@ p,
   margin-top: 100px;
 }
 .about-info h1,
-p {
+.about-info p {
   color: black;
   margin-right: 100px;
   text-align: center;
