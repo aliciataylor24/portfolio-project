@@ -150,7 +150,40 @@ h4 {
   display: block;
   border-radius: 8px;
 }
-
+.logo-name {
+  max-height: 40px;
+  font-size: 20px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 30px;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav {
+  padding: 40px 0;
+}
+nav a {
+  text-decoration: none;
+  font-family: var(--primary-font);
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+nav a:hover {
+  color: #272142;
+  opacity: 70%;
+}
+nav li a.active {
+  font-weight: 900;
+}
 @media (max-width: 768px) {
   .header-image {
     display: flex;
@@ -210,5 +243,11 @@ h4 {
   }
   .appetizer-header {
     font-size: 20px;
+  }
+  nav a {
+    font-size: 12px;
+  }
+  .logo-name {
+    font-size: 16px;
   }
 }
