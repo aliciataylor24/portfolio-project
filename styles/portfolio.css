@@ -10,15 +10,26 @@ h1 {
   font-size: 48px;
 }
 h2 {
-  font-family: "Antic Didone", serif;
+  font-family: "Zilla Slab", serif;
   font-size: 18px;
   text-align: center;
+}
+h3 {
+  font-family: "Zilla Slab", serif;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 400px;
+}
+h4 {
+  font-family: "Zilla Slab", serif;
+  font-size: 18px;
+  font-weight: 600px;
 }
 p,
 .hero p {
   color: white;
-  font-family: "Antic Didone", serif;
-  font-weight: bolder;
+  font-family: "Zilla Slab", serif;
+  font-weight: 300px;
   font-size: 18px;
 }
 
@@ -55,7 +66,7 @@ p,
 }
 
 .soup-image,
-.salmon-image,
+.mushroom-image,
 .carrots-image,
 .tacos-image,
 .cookies-image,
@@ -75,8 +86,6 @@ p,
   align-items: flex-start;
   gap: 30px;
   margin-top: 50px;
-  font-family: "Antic Didone", serif;
-  font-weight: bolder;
   font-size: 18px;
 }
 .icon-green {
@@ -107,6 +116,21 @@ p {
   font-weight: 400;
   text-decoration: underline 2px black;
 }
+.recipes-header {
+  text-align: center;
+  color: black;
+  font-size: 48px;
+}
+.recipe-names {
+  text-align: center;
+  color: black;
+  font-size: 34px;
+}
+.appetizer-header {
+  font-weight: 400;
+  text-decoration: underline 2px black;
+  font-size: 40px;
+}
 .soup-image-about,
 .tacos-image-about,
 .cookies-image-about {
@@ -116,33 +140,52 @@ p {
   display: block;
   border-radius: 8px;
 }
+#soup-image-recipe,
+#mushroom-image-recipe,
+#carrots-image-recipe,
+#tacos-image-recipe,
+#cookies-image-recipe,
+#pancakes-image-recipe {
+  height: 525px;
+  width: 608px;
+  margin: auto;
+  display: block;
+  border-radius: 8px;
+}
+
 @media (max-width: 768px) {
   .header-image {
     display: flex;
   }
-  h1 {
+  h1,
+  .recipes-header {
     font-size: 24px;
   }
   p,
   h2,
-  icons {
-    font-size: 12px;
+  icons,
+  .recipe-names {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 18px;
+    text-decoration: underline;
   }
   .soup-image,
-  .salmon-image,
+  .mushroom-image,
   .carrots-image,
   .tacos-image,
   .cookies-image,
-  .pancakes-image {
-    height: 175px;
-    width: 200px;
-    margin: auto;
-    display: block;
-    border-radius: 4px;
-  }
+  .pancakes-image,
   .soup-image-about,
   .tacos-image-about,
-  .cookies-image-about {
+  .cookies-image-about,
+  #soup-image-recipe,
+  #mushroom-image-recipe,
+  #carrots-image-recipe,
+  #tacos-image-recipe,
+  #cookies-image-recipe,
+  #pancakes-image-recipe {
     height: 175px;
     width: 200px;
     margin: auto;
@@ -161,5 +204,8 @@ p {
   }
   .recipe-about {
     font-size: 18px;
+  }
+  .appetizer-header {
+    font-size: 20px;
   }
 }
