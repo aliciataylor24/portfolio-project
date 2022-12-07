@@ -4,11 +4,7 @@
   --primary-color: #272142;
 }
 body {
-  background: linear-gradient(
-    109.6deg,
-    rgb(245, 239, 249) 30.1%,
-    rgb(207, 211, 236) 100.2%
-  );
+  background: rgb(245, 239, 249);
 }
 h1 {
   color: white;
@@ -98,7 +94,8 @@ h4 {
   margin: auto;
   display: block;
   position: relative;
-  margin-top: 100px;
+  margin-top: 75px;
+  margin-bottom: 75px;
 }
 .about-info h1,
 .about-info p {
@@ -123,7 +120,7 @@ h4 {
   font-size: 34px;
 }
 .appetizer-header {
-  font-weight: 400;
+  font-weight: 600;
   text-decoration: underline 2px var(--primary-color);
   font-size: 40px;
 }
@@ -237,8 +234,15 @@ nav li a.active {
     display: block;
     border-radius: 4px;
   }
+  .about-info {
+    margin-top: 50px;
+  }
+  .about-info h4 {
+    text-align: center;
+  }
   .about-info-section {
-    margin-top: 75px;
+    margin-top: 50px;
+    margin-bottom: 25px;
   }
   .alicia-image {
     height: 300px;
