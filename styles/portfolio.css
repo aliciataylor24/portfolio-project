@@ -1,8 +1,15 @@
 :root {
   --primary-font: "Merriweather", serif;
   --secondary-font: "Zilla Slab", serif;
+  --primary-color: #272142;
 }
-
+body {
+  background: linear-gradient(
+    109.6deg,
+    rgb(245, 239, 249) 30.1%,
+    rgb(207, 211, 236) 100.2%
+  );
+}
 h1 {
   color: white;
   font-family: var(--primary-font);
@@ -11,17 +18,20 @@ h1 {
 }
 h2 {
   font-family: var(--secondary-font);
+  color: var(--primary-color);
   font-size: 18px;
   text-align: center;
 }
 h3 {
   font-family: var(--secondary-font);
+  color: var(--primary-color);
   font-size: 24px;
   text-align: center;
   font-weight: 400px;
 }
 h4 {
   font-family: var(--secondary-font);
+  color: var(--primary-color);
   font-size: 18px;
   font-weight: 600px;
 }
@@ -45,22 +55,10 @@ h4 {
   width: 100%;
 }
 
-.container {
-  width: 100%;
-}
-
 .container-hero {
   position: relative;
   text-align: center;
   color: white;
-}
-
-.container-navbar {
-  width: 100%;
-}
-
-.bg-light {
-  background: #f9f7fe;
 }
 
 .soup-image,
@@ -77,17 +75,17 @@ h4 {
 }
 
 .icons {
-  text-align: center;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
-  gap: 30px;
-  margin-top: 50px;
+  gap: 40px;
   font-size: 18px;
 }
 .icon-green {
-  color: #272142;
+  color: var(--primary-color);
+  background: white;
+  padding: 14px 15px;
+  border-radius: 50%;
+  font-size: 18px;
 }
 .alicia-image {
   height: 400px;
@@ -104,29 +102,29 @@ h4 {
 }
 .about-info h1,
 .about-info p {
-  color: black;
+  color: var(--primary-color);
   margin-right: 100px;
   text-align: center;
 }
 .recipe-about {
   text-align: center;
-  color: black;
+  color: var(--primary-color);
   font-weight: 400;
-  text-decoration: underline 2px black;
+  text-decoration: underline 2px var(--primary-color);
 }
 .recipes-header {
   text-align: center;
-  color: black;
+  color: var(--primary-color);
   font-size: 48px;
 }
 .recipe-names {
   text-align: center;
-  color: black;
+  color: var(--primary-color);
   font-size: 34px;
 }
 .appetizer-header {
   font-weight: 400;
-  text-decoration: underline 2px black;
+  text-decoration: underline 2px var(--primary-color);
   font-size: 40px;
 }
 .soup-image-about,
@@ -157,6 +155,20 @@ h4 {
 .navbar {
   display: flex;
   justify-content: space-between;
+  background: linear-gradient(
+    125.8deg,
+    rgb(240, 228, 247) 30.1%,
+    rgb(194, 199, 229) 100.2%
+  );
+}
+.footer-navbar {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    125.8deg,
+    rgb(239, 224, 249) 30.1%,
+    rgb(184, 190, 231) 100.2%
+  );
 }
 nav li {
   display: inline;
@@ -174,11 +186,12 @@ nav {
 nav a {
   text-decoration: none;
   font-family: var(--primary-font);
-  color: #272142;
+  color: var(--primary-color);
   transition: all 100ms ease-in-out;
 }
-nav a:hover {
-  color: #272142;
+nav a:hover,
+.icon-green:hover {
+  color: var(--primary-color);
   opacity: 70%;
 }
 nav li a.active {
@@ -237,17 +250,25 @@ nav li a.active {
   .about-info h1,
   .about-info p {
     margin-right: 0px;
+    color: var(--primary-color);
   }
   .recipe-about {
     font-size: 18px;
+    color: var(--primary-color);
   }
   .appetizer-header {
     font-size: 20px;
+    color: var(--primary-color);
   }
   nav a {
     font-size: 12px;
+    color: var(--primary-color);
   }
   .logo-name {
     font-size: 16px;
+  }
+  .icon-green {
+    padding: 10px 11px;
+    font-size: 12px;
   }
 }
