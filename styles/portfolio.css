@@ -39,8 +39,9 @@ h4 {
   transform: translate(-50%, -50%);
 }
 .header-image {
-  height: 485px;
-  top: 135px;
+  object-fit: cover;
+  object-position: center;
+  height: 500px;
   width: 100%;
 }
 
@@ -153,6 +154,7 @@ h4 {
 @media (max-width: 768px) {
   .header-image {
     display: flex;
+    height: 300px;
   }
   h1,
   .recipes-header {
@@ -193,11 +195,15 @@ h4 {
     margin-top: 75px;
   }
   .alicia-image {
-    height: 200px;
+    height: 300px;
     margin: auto;
     display: block;
     border-radius: 4px;
     position: relative;
+  }
+  .about-info h1,
+  .about-info p {
+    margin-right: 0px;
   }
   .recipe-about {
     font-size: 18px;
